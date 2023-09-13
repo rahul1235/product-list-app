@@ -10,11 +10,11 @@ const Product = ({
   brand,
   price,
 }) => {
-  const loadingUrl = "/logo192.png";
+  const loadingUrl = "logo192.png";
   const onLoadHandler = (e) => {
-    console.log(e.target.src)
-    console.log(loadingUrl)
-    if (e.target.src === loadingUrl) {
+    console.log(loadingUrl);
+    console.log(e.target.src.split("/")[3])
+    if (e.target.src.split("/")[3] === loadingUrl) {
       e.target.src = e.target.getAttribute("data-thumbnail");
     }
   };
