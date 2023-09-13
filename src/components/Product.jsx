@@ -10,8 +10,10 @@ const Product = ({
   brand,
   price,
 }) => {
-  const loadingUrl = "http://localhost:3000/logo192.png";
+  const loadingUrl = "/logo192.png";
   const onLoadHandler = (e) => {
+    console.log(e.target.src)
+    console.log(loadingUrl)
     if (e.target.src === loadingUrl) {
       e.target.src = e.target.getAttribute("data-thumbnail");
     }
