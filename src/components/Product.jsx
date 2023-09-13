@@ -12,8 +12,6 @@ const Product = ({
 }) => {
   const loadingUrl = "logo192.png";
   const onLoadHandler = (e) => {
-    console.log(loadingUrl);
-    console.log(e.target.src.split("/")[3])
     if (e.target.src.split("/")[3] === loadingUrl) {
       e.target.src = e.target.getAttribute("data-thumbnail");
     }

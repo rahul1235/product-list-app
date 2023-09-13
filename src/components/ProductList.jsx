@@ -5,11 +5,8 @@ import { getFilteredData } from "../utils/productFilter";
 import Loader from "./Loader";
 
 const ProductList = ({ apiUrl, query }) => {
-  console.log("query", query);
   console.log("inside list");
   let { data: products, loading, error } = useFetch(apiUrl);
-  console.log({ loading, error });
-
   if (loading) {
     return <Loader></Loader>;
   }
