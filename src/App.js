@@ -3,6 +3,7 @@ import "./App.css";
 import ProductList from "./components/ProductList";
 import Search from "./components/Search";
 import { API_URL, APP_TITLE } from "./config";
+import Footer from "./components/Footer";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -15,6 +16,7 @@ function App() {
       <br />
       <Search onQuery={setQuery}></Search>
       <ProductList query={query} apiUrl={API_URL} />
+      <Footer></Footer>
     </div>
   );
 }
