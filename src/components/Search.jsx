@@ -11,11 +11,11 @@ const Search = ({ onQuery }) => {
     <div className="font-sans text-blackbg-white flex items-center justify-center">
       <div className="border rounded overflow-hidden flex">
         <input
-          type="text"
+          type="search"
           className="px-4 py-2 w-64"
           value={searchValue}
           onChange={onChangeHandler}
-          placeholder="Search..."
+          placeholder="Search your products"
         />
         {/* <button className="flex items-center justify-center px-4 border-l">
           <svg

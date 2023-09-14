@@ -25,6 +25,15 @@ const ProductList = ({ apiUrl, query }) => {
   return (
     <div className="mx-auto max-w-4xl">
       <ul className="divide-y divide-gray-100">
+        {(() => {
+          if (products.length === 0) {
+            return (
+              <li className="flex justify-center gap-x-6 py-5">
+                Product not found
+              </li>
+            );
+          }
+        })()}
         {products &&
           products.map((product) => {
             return <Product key={product.id} {...product} />;
