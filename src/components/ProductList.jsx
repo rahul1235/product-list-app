@@ -29,7 +29,9 @@ const ProductList = ({ apiUrl, query }) => {
           if (products.length === 0) {
             return (
               <li className="flex justify-center gap-x-6 py-5">
-                Product not found
+                <span class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10">
+                  Product not found
+                </span>
               </li>
             );
           }

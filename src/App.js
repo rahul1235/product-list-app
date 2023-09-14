@@ -11,7 +11,9 @@ function App() {
   return (
     <div className="bg-white px-4 py-12 sm:px-6 lg:px-8">
       <div className="flex items-center justify-center">
-        <h1 className="text-3xl font-bold">{APP_TITLE}</h1>
+        <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          {APP_TITLE}
+        </h1>
       </div>
       <br />
       <Search onQuery={setQuery}></Search>
